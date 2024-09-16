@@ -127,6 +127,7 @@ class SSRMamba(nn.Module):
             )
         
     def forward(self, x):
+        shortcut = x
         x = self.head(x)
         for spatial_mamba in self.spatail_mambas:
             x = spatial_mamba(x)
@@ -135,4 +136,4 @@ class SSRMamba(nn.Module):
         for spectral_mamba in self.spectral_mambas:
             x = spectral_mamba(x)
         x = self.tail(x) # b hsi_bands h w 
-        return x
+        return x + shortcut 
