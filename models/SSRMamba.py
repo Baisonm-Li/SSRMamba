@@ -3,8 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from einops import rearrange
-from models.mamba import VMambaBlock,SS2DBlcok,VSA
-from models.unet import DoubleConv, Down, Up, UNet
+from mamba import VMambaBlock,SS2DBlcok,VSA
 
 class DoubleConv(nn.Module):
     def __init__(self, in_channels, out_channels):
