@@ -127,7 +127,9 @@ class SSRMamba(nn.Module):
             )
         
     def forward(self, x):
-        shortcut = x
+        b,c,h,w = x.shape
+        shortcut = torch.zeros_like(b,self.hsi_bands,h,w)
+        shortcut[:c] = x
         x = self.head(x)
         for spatial_mamba in self.spatail_mambas:
             x = spatial_mamba(x)
