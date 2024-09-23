@@ -40,4 +40,4 @@ python train.py --dataset CAVE --batch_size 32
 ```
 
 ## Acknowledgement
-Our code references [efficient-kan](https://github.com/Blealtan/efficient-kan.git) and [pykan](https://github.com/KindXiaoming/pykan.git). Thanks for their greak work!
+Our code references [mamba](https://github.com/mamba-org/mamba) and [vmamba](https://github.com/MzeroMiko/VMamba). Thanks for their greak work!
