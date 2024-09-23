@@ -1,6 +1,6 @@
 # SSRMamba
 
-Code of KSSANet: "SSRMamba: Efficient Visual State Space Model for Spectral Super-Resolution"
+Code of: "SSRMamba: Efficient Visual State Space Model for Spectral Super-Resolution"
 
 Spectral super-resolution, which reconstructs hy-
 perspectral images (HSI) from a single RGB image, has gar-
